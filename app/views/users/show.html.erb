@@ -1,0 +1,6 @@
+<h1>Profile Page for <%= @user.username %></h1>
+<p><%= @user.username %></p>
+<% @user.bytes.each do |byte| %>
+    <!-- above is adding all the bytes for each user under their username -->
+    <p><%= byte.content %></p>
+<% end %>
